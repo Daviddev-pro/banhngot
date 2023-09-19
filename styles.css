@@ -1,0 +1,99 @@
+/* styles.css */
+/* Định dạng header */
+.header {
+    background-color: #FFA500; /* Màu cam tươi sáng */
+    color: #5A0606; /* Màu chữ cho header */
+    padding: 20px;
+}
+
+/* Định dạng footer */
+.footer {
+    background-color: #FFA500; /* Màu cam tươi sáng */
+    color: #FFFFFF; /* Màu chữ cho footer */
+    padding: 20px;
+}
+
+/* Định dạng nút "Add to Cart" */
+.btn-primary {
+    background-color: #FFA500; /* Màu cam tươi sáng cho nút */
+    border-color: #FFA500; /* Màu viền cho nút */
+    color: #FFFFFF; /* Màu chữ cho nút */
+}
+
+/* Định dạng màu nền cho tab menu */
+.nav-tabs {
+    background-color: #FFA500; /* Màu cam tươi sáng cho tab menu */
+    border: none;
+}
+
+/* Định dạng màu chữ cho tab menu */
+.nav-tabs .nav-link {
+    color: #FFFFFF; /* Màu chữ cho tab menu */
+}
+
+/* Định dạng nút "Sign Up" */
+.btn-danger {
+    background-color: #FFA500; /* Màu cam tươi sáng cho nút */
+    border-color: #FFA500; /* Màu viền cho nút */
+    color: #FFFFFF; /* Màu chữ cho nút */
+}
+
+/* Định dạng màu nền cho sản phẩm */
+.product-thumbnail {
+    background-color: #FFFFFF; /* Màu nền cho sản phẩm */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #E1C5C5; /* Màu viền cho sản phẩm */
+}
+
+/* Định dạng màu chữ cho sản phẩm */
+.product-thumbnail h3 {
+    color: #FFA500; /* Màu chữ cho sản phẩm */
+}
+
+/* Định dạng màu giá sản phẩm */
+.product-thumbnail p {
+    color: #5A0606; /* Màu chữ cho giá sản phẩm */
+}
+
+/* Định dạng màu nền cho carousel */
+.carousel-inner {
+    background-color: #FFFFFF; /* Màu nền cho carousel */
+}
+
+/* Định dạng màu nút điều hướng cho carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #FFA500; /* Màu nút điều hướng cho carousel */
+    color: #FFFFFF; /* Màu chữ cho nút điều hướng carousel */
+}
+
+/* Định dạng màu nền cho tab menu */
+.nav-tabs {
+    background-color: #FFA500; /* Màu nền cho tab menu */
+    border: none;
+}
+
+/* CSS để thay đổi màu nền và biểu tượng menu */
+.navbar-nav .nav-item .nav-link {
+    color: #FFA500; /* Màu chữ cho các mục menu */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FF6347; /* Màu chữ khi di chuột qua các mục menu */
+}
+
+.navbar-nav .nav-item .nav-link i {
+    font-size: 24px; /* Kích thước biểu tượng */
+    margin-right: 8px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
+
+.navbar-nav .nav-item .nav-link.active i {
+    color: #FF6347; /* Màu chữ cho biểu tượng của mục menu đang được chọn */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    background-color: #FFF; /* Màu nền cho mục menu đang được chọn */
+    border-radius: 50px; /* Để làm tròn góc của mục menu đang được chọn */
+}

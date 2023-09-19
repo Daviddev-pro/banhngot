@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Link đến Bootstrap CSS và Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+  <div class="header jumbotron text-center text-capitalize">
+    <h1>Tiệm Bánh Ngọt</h1>
+    <p>"Bánh ngọt là ngôn ngữ thứ hai của tình yêu." - Judith Olney</p>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tiệm Bánh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Download <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Windows</a></li>
+              <li><a class="dropdown-item" href="#">Linux</a></li>
+              <li><a class="dropdown-item" href="#">MacOS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span> Your account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="vernav col-md-3 col-sm-4">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-cake-candles fa-bounce"></i></i> Bánh Sinh Nhật</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-lemon fa-bounce"></i> Bánh Tart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-sharp fa-regular fa-circle fa-bounce"></i> Bánh Donut</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-ice-cream fa-bounce"></i> Kem Sô-Cô-La</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-cookie fa-bounce"></i> Bánh Cookie</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="main col-sm-9 col-xs-7">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagine/i1 (1).jpg" alt="Los Angeles" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+              <img src="imagine/i1 (2).jpg" alt="Chicago" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+              <img src="imagine/i1 (3).jpg" alt="New York" class="d-block w-100">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Some content.</p>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Some content in menu 1.</p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Some content in menu 2.</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9">
+          <div class="row">
+            <!-- Sản phẩm 1 -->
+            <div class="col-xs-12 col-sm-4 col-md-4 product-thumbnail">
+              <div class="thumbnail">
+                <img src="imagine/img1.png" alt="Product Image">
+                <div class="caption">
+                  <h3>Bánh sinh nhật</h3>
+                  <p>Price: 200k</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="col-xs-12 col-sm-4 col-md-4 product-thumbnail">
+              <div class="thumbnail">
+                <img src="imagine/img2.png" alt="Product Image">
+                <div class="caption">
+                  <h3>Bánh cookie</h3>
+                  <p>Price: 50k</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="col-xs-12 col-sm-4 col-md-4 product-thumbnail">
+              <div class="thumbnail">
+                <img src="imagine/img3.png" alt="Product Image">
+                <div class="caption">
+                  <h3>Kem So-co-la</h3>
+                  <p>Price: 20k</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Thêm sản phẩm khác tương tự -->
+            <div class="col-xs-12 col-sm-4 col-md-4 product-thumbnail">
+              <div class="thumbnail">
+                <img src="imagine/img4.png" alt="Product Image">
+                <div class="caption">
+                  <h3>Bánh Trung Thu</h3>
+                  <p>Price: 130k</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 product-thumbnail">
+              <div class="thumbnail">
+                <img src="imagine/img5.png" alt="Product Image">
+                <div class="caption">
+                  <h3>Bánh Trung Thu</h3>
+                  <p>Price: 300k</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 product-thumbnail">
+              <div class="thumbnail">
+                <img src="imagine/img6.png" alt="Product Image">
+                <div class="caption">
+                  <h3>Gato cuộn</h3>
+                  <p>Price: 75k</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid text-center bg-dark text-light py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 Online Store. All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <form class="form-inline justify-content-end">
+            <div class="form-group">
+              <label for="email" class="sr-only">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Email Address">
+            </div>
+            <button type="button" class="btn btn-danger ml-2">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
